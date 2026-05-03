@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Meta tag para asegurar que se vea bien en celulares si decide usar uno -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Para mi amor 💗</title>
+
+<!-- Fuentes de Google -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    /* Mantenemos un fondo base por seguridad, pero el overflow oculto para PC */
+    background: #fff0f5;
+    overflow: hidden; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL DEL SLIDER */
+.wrapper {
+    width: 200vw;
+    display: flex;
+    /* Transición suave y premium para PC */
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* 💗 ESTILOS DE LA PORTADA (PÁGINA 1) */
+.portada {
+    /* Mantenemos el degradado rosa en la portada */
+    background: linear-gradient(135deg, #fff0f5 0%, #ffd6ec 100%);
+    text-align: center;
+}
+
+.portada h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(40px, 6vw, 80px); /* Tamaño adaptable */
+    color: #ff6fa5;
+    margin-bottom: 30px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.05));
+}
+
+.btn {
+    background: white;
+    color: #ff6fa5;
+    padding: 18px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.4s;
+    box-shadow: 0 10px 20px rgba(255, 111, 165, 0.2);
+    border: 2px solid transparent;
+    display: inline-block; /* Para centrarlo bien */
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(255, 111, 165, 0.3);
+    background: #ff6fa5;
+    color: white;
+}
+
+/* 💌 ESTILOS DE LA PÁGINA DE LA CARTA (PÁGINA 2) */
+.carta-page {
+    /* --- AQUÍ ESTÁ EL CAMBIO PRINCIPAL --- */
+    /* Reemplazamos el color rosa por tu imagen floral vintage */
+    background-image: url('fondo_floral.jpg'); /* Asegúrate de que el nombre coincida */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    /* ------------------------------------- */
+}
+
+.paper {
+    background: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    /* Mantenemos una altura máxima para la carta en PC */
+    height: 80vh; 
+    padding: clamp(20px, 5%, 50px); /* Padding adaptable */
+    border-radius: 15px;
+    /* Efecto de sombra rígida estética para PC */
+    box-shadow: 20px 20px 0px rgba(0,0,0,0.05); 
+    overflow-y: auto; /* Permite scroll interno si la carta es larga */
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+
+/* Personalizar barra de scroll de la carta para PC (como en image_0.png) */
+.paper::-webkit-scrollbar {
+    width: 8px;
+}
+.paper::-webkit-scrollbar-track {
+    background: #fff0f5;
+    border-radius: 10px;
+}
+.paper::-webkit-scrollbar-thumb {
+    background: #ff6fa5;
+    border-radius: 10px;
+}
+
+/* Imagen de cabecera dentro de la carta */
+.heart-img {
+    width: clamp(100px, 20%, 140px); /* Tamaño adaptable */
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos del texto de la carta */
+p {
+    font-size: 18px;
+    color: #444;
+    line-height: 2;
+    text-align: justify; /* Justificado para que se vea ordenado en PC */
+    margin: 0;
+}
+
+/* Animación de entrada de la carta */
+.aparecer-texto {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper" id="slider">
+
+    <!-- 💗 PÁGINA 1: PORTADA -->
+    <div class="page portada">
+        <div>
+            <h1>Felices 9 meses mi príncipe 💗</h1>
+            <div class="btn" onclick="irCarta()">Abrir con amor 💌</div>
+        </div>
+    </div>
+
+    <!-- 💌 PÁGINA 2: CARTA -->
+    <div class="page carta-page">
+        <div class="paper">
+            <!-- Imagen de cabecera (puedes usar tu corazon.png o la foto del corazón de encaje de image_0.png si la tienes separada) -->
+            <img src="corazon.png" class="heart-img" alt="💗">
+            
+            <div class="aparecer-texto">
+                <p>
+                    <strong>Hola mi tortuguito lindo 💗</strong><br><br>
+                    Felices 9 meses, mi niño bonito. Ya 9 meses juntos y no puedo creer lo lejos que llegamos y todo lo que nos falta vivir juntitos...
+                    <br><br>
+                    Me encanta amarte mi niño ,me encanta hacerte feliz y ver esa hermosa sonrisita que me alegra hasta los días más oscuros, quiero amarte hasta el fin de mis días . Quiero estar en tus días más bonitos hasta los   más tristes pero siempre junto a ti apoyándote para que nunca vuelvas a sentirte solito mi niño lindo. Eres la única personita que me importa y que si le pasara algo me afectaría tanto hasta morirme de tristeza. Eres el único chico que voy a amar por toda la eternidad, el único que quiero en mi vida, con el único que me quiero reír, con el único que me quiero enojar, con el único que quiero llorar, el único al que quiero amar, el único en el que quiero confiar ciegamente y demostrarle todos mis lados, y ver los suyos también.
+
+
+
+<br><br>
+
+
+
+Quiero estar contigo todas las vidas que sean posibles. No me importa en qué forma, ni dónde, ni cómo, pero quiero estar junto a ti, amándote, cuidándote y mimándote siempre. Quiero agradecerte por todo este tiempo juntos, lleno de amor, de risas y de aprender uno del otro. Quiero seguir aprendiendo cada cosa de ti y descubrir cada lado tuyo.
+
+
+
+<br><br>
+
+Eres lo más bonito que le ha pasado a mi vida. Llegaste de repente volviéndote mi persona favorita y convirtiéndote en mi lugar más seguro el chico que voy a elegir siempre, sin dudarlo, pase lo que pase. Y aunque a veces no lo diga tanto como debería, significas muchísimo para mí mi niño ,más de lo que puedo expresar con mis palabras.
+
+Amo todo de vos mi tortuguito, tu manera tan linda de ser, tu forma de hablarme, de cuidarme, de hacerme sentir mejor cuando estoy en mis peores días, siendo una luz en mi vida. Amo cuando sos tierno conmigo, cuando me decís cositas bonitas hasta hacerme llorar de felicidad. Con vos no necesito nada más, solo saber que te tengo junto a mí.
+
+
+
+<br><br>
+
+
+
+Aunque estemos por ahora a distancia, aunque no podamos vernos todos los días o abrazarnos cuando queremos, siempre de alguna manera estás cerca mío. Estás en mis pensamientos todo el tiempo, en cada cosa que hago, en cada canción de amor que escucho, en cada momento de mi día. Sos parte de mí, aunque no estés físicamente acá.
+
+Gracias por estos 9 meses tan hermosos, por cada detalle, por cada palabra, por cada momento que vivimos juntos. Gracias por dejarme amarte y hacerme sentir tan amada.
+
+Gracias por existir, mi lindo niño te amo con todo lo que soy 💗
+                    <br><br>
+                    <strong>Te amo por siempre.</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// Función para deslizar de la portada a la carta
+function irCarta() {
+    document.getElementById("slider").style.transform = "translateX(-100vw)";
+}
+</script>
+
+</body>
+</html>
